@@ -1,20 +1,24 @@
 "use strict"
 
-// let answer = confirm("Тебе есть 18?");
-// console.log(answer);
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-// let result = +prompt("Сколько тебе лет?", "");
-// console.log(result);
+const personalMovieDB = {
+	count: numberOfFilms,
+	movies: {},
+	actors: {},
+	genres: [],
+	privat: false
+};
 
-const answers = [];
+const lastFilm = prompt('Один из последних просмотренных фильмов', ''),
+			rateFilm = prompt('На сколько оцените его?', ''),
+			lastFilmTwo = prompt('Один из последних просмотренных фильмов', ''),
+			rateFilmTwo = prompt('На сколько оцените его?', '');
 
-answers[0] = prompt('Как тебя зовут?', '');
-answers[1] = prompt('Откуда ты?', '');
-answers[2] = prompt('Сколько тебе лет?', '');
+personalMovieDB.movies[lastFilm] = rateFilm;
+personalMovieDB.movies[lastFilmTwo] = rateFilmTwo;
 
-document.write(answers);
-console.log(answers);
+console.log(personalMovieDB);
 
-//
-// let cat = 'gucci';
-// console.log(`my cats name is ${cat}`);
+
+
