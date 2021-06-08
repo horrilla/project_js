@@ -1,5 +1,19 @@
 "use strict"
 
+
+
+function doPractice() {
+    console.log('Выполнение практического задания 2.');
+};
+
+doPractice();
+
+
+
+
+
+
+
 let numberOfFilms;
 
 function start() {
